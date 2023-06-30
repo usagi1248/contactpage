@@ -1,0 +1,191 @@
+/*This is my SSB Contact Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------- This is the beginning of my SSB Contact Web Page Project ------------ */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url("images/trans-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+@keyframes fade-in-slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.center {
+  width: 80%;
+  padding: 2%;
+  margin: 5% auto;
+
+  background: rgb(241,142,249);
+  background: linear-gradient(144deg, rgba(241,142,249,0.75) 0%, rgba(247,181,255,0.65) 37%, rgba(255,228,252,0.75) 100%);
+
+  text-align: center;
+  border: 8px solid #fff;
+  border-radius: 20px;
+
+  animation: fade-in-slide-down 0.75s ease-in-out;
+}
+
+#logo {
+  margin-bottom: 2%;
+  margin-top: 2%;
+  padding: 1%;
+  width: 50%;
+  max-width: 25em;
+
+  border: 3px dashed #fff;
+  border-radius: 25%;
+  text-align: center;
+}
+
+h1,
+h2,
+p {
+  font-family: 'Belanosima', sans-serif;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.2;
+  margin: 0 auto 10px auto;
+  text-shadow: 1px 1px 1px rgb(171, 105, 193);
+}
+
+h2 {
+  font-size: 1.7em;
+  line-height: 1.2;
+  margin: 0 auto 10px auto;
+  text-shadow: 1px 1px 1px rgb(171, 105, 193);
+}
+
+p {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.4;
+  text-shadow: 1px 1px 1px rgb(171, 105, 193);
+}
+
+nav {
+  font-family: 'Belanosima', sans-serif;
+  font-size: 2em;
+  line-height: 1.2;
+  text-shadow: 1px 1px 1px rgb(171, 105, 193);
+
+  width: 70%;
+  margin: 2% auto;
+  padding: 2%;
+
+  border-top: 3px dashed #fff;
+}
+
+nav li {
+  color: #fff;
+  display: inline;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0 1%;
+  margin: 2px;
+
+  color: #fff;
+  text-decoration: none;
+
+  background-color: rgba(164, 209, 255, 0.75);
+  border-radius: 7px;
+}
+
+nav a div {
+  vertical-align:middle;
+  display:inline;
+}
+
+nav a img {
+  width: 0.9em ;
+  vertical-align:middle;
+}
+
+a:hover {
+  color: #fff;
+  background-color: rgba(241,142,249,0.75);
+  border-radius: 7px;
+
+  transition: all .2s ease-in-out; 
+  transform: scale(1.05); 
+}
+
+@media only screen and (max-width: 480px) {
+  h1, h2, p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}
