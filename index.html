@@ -20,11 +20,10 @@
 
     <body> 
         <header class="main-header">
-            <a href="index.html"><img src="images/logo@2x.png" width="5%" id="small-logo" alt="Mini Logo of Nikki's Page!"></a>
+            <a href="index.html"><img src="images/logo@2x.png"   id="small-logo" alt="Mini Logo of Nikki's Page!"></a>
 
             <ul class="main-nav">
                 <li><a href="index.html">Main Page</a></li>
-                <li><a href="#">Recent Doings ❥</a></li>
                 <li class="contact-dropdown">
                     <a href="#" class="contact-button">Contacts ❥</a>
                     <div class="contact-dropdown-content">
@@ -33,13 +32,20 @@
                         <a href="mailto:jchong22@calpoly.edu" target="_blank">Email</a>
                       </div>
                 </li>
-                <li><a href="#">Galleries ❥</a></li>
+                <li class = "gallery-dropdown">
+                    <a href="#" class="gallery-button">Galleries ❥</a>
+                    <div class="gallery-dropdown-content">
+                        <a href="artgallery.html">2D Art</a>
+                        <a href="#">3D Models</a>
+                        <a href="#">Code Demos</a>
+                    </div>
+                </li>
             </ul>
         </header>
 
         <div class="center">
             <img id="logo" src="images/logo@2x.png" alt=”Logo of Nikki's Page! Text: Nikki Chong. Programmer, Artist, and Web Developer!”>
-
+            
             <h1>Hello, welcome to my contact page! :D</h1>
             <h2>I do a lot of stuff, basically.</h2>
             <p>Just enjoy this coolish page for now :3</p>
@@ -62,7 +68,7 @@
             <div class="card">
                 <a href="https://robotdolphins.org/" target="_blank">
                     <div class="cardphoto">
-                        <img src="https://dummyimage.com/400x300/000/fff.png&text=Placeholder+Image" alt="placeholder image" />
+                        <img src="images/team5199.jpeg" alt="Team 5199: Robot Dolphins from Outer Space. We won the 2022 Aerospace Valley Regional, but somehow I'm not in this picture." />
                     </div>
                     <article class="cardarticle">
                         <h3 class="cardH1">FRC Robotics: Team 5199</h3>
@@ -75,23 +81,25 @@
             </div>
 
             <div class="card">
-                <div class="cardphoto">
-                    <img src="https://dummyimage.com/400x300/000/fff.png&text=Placeholder+Image" alt="placeholder image" />
-                </div>
-                <article class="cardarticle">
-                    <h3 class="cardH1">My Art Gallery</h3>
-                    <p>I don't complete my work often, but I try to put effort nonetheless. These pieces represent the thoughts and ideas I have, mainly just fun things I thought I could draw.
-                        <br>
-                        <br> Click here to see my work!
-                    </p>
-                </article>
-                <footer class="cardfooter">Card footer</footer>
+                <a href="artgallery.html">
+                    <div class="cardphoto">
+                        <img src="https://dummyimage.com/400x300/000/fff.png&text=Placeholder+Image" alt="placeholder image" />
+                    </div>
+                    <article class="cardarticle">
+                        <h3 class="cardH1">My Art Gallery</h3>
+                        <p>I don't complete my work often, but I try to put effort nonetheless. These pieces represent the thoughts and ideas I have, mainly just fun things I thought I could draw.
+                            <br>
+                            <br> (NOT YET FINISHED, IS BLANK)
+                        </p>
+                    </article>
+                    <footer class="cardfooter">Card footer</footer>
+                </a>
             </div>
 
             <div class="card">
                 <a href="https://vrchat.com/home/user/usr_6e957067-d700-4bb5-b8e4-74182308bc08" target="_blank">
                     <div class="cardphoto">
-                        <img src="https://dummyimage.com/400x300/000/fff.png&text=Placeholder+Image" alt="placeholder image" />
+                        <img src="images/vrchat.jpeg" alt="Pride event in VRChat! This isn't me, but I have this exact same avatar of an anime woman with trans colors." />
                     </div> 
                     <article class="cardarticle">
                         <h3 class="cardH1">VRChat Profile: usagi_1248</h3>
@@ -104,5 +112,6 @@
                 </a>
             </div>
         </div>
+
     </body>
 </html>

@@ -142,6 +142,13 @@ p {
   text-shadow: 2px 2px 2px rgb(171, 105, 193);
 }
 
+.subtext {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1em;
+  line-height: 1;
+  text-shadow: 2px 2px 2px rgb(171, 105, 193);
+}
+
 nav {
   font-family: 'Belanosima', sans-serif;
   font-size: 2em;
@@ -185,7 +192,8 @@ nav a img {
   vertical-align:middle;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
   background-color: rgba(104, 10, 111, 0.75);
   box-shadow: 2px 5px 5px rgba(171, 105, 193, 0.5);
   border-radius: 7px;
@@ -257,7 +265,8 @@ nav a:hover {
 
   animation: fade-in-slide-up 0.75s ease-in-out;
 }
-.card:hover {
+.card:hover,
+.card:focus-within {
   transition: all 0.1s ease-in;
   top: -5px;
   box-shadow: 5px 5px 5px rgba(171, 105, 193, 0.5);
@@ -344,9 +353,10 @@ h3{
   }
 
   #small-logo {
-    width: 80px;
+    width: 100px;
     border: 2px solid #fff;
     border-radius: 25%;
+    margin: 1vh 0;
   }
   
   @media (min-width: 1025px) {
@@ -356,6 +366,9 @@ h3{
     }
     ul .main-nav{
       justify-content: space-between;
+    }
+    #small-logo {
+      margin: 0;
     }
   }
   
@@ -380,7 +393,7 @@ h3{
   
   .main-nav a {
     text-align: center;
-    margin: 0px auto;
+    margin: 0;
     text-decoration: none;
 
     display: inline-block;
@@ -397,10 +410,12 @@ h3{
 
 .main-header li {
   display:flex; 
-  width: 25%
+  width: 33.3%;
+  justify-content: center;
 }
 
-.main-header li:hover {
+.main-header li:hover,
+.main-header li:focus-within {
   transition: all 0.1s ease-in;
   background-color: rgba(146, 50, 161, 0.75);
 
@@ -442,22 +457,71 @@ h3{
   
   /* Links inside the dropdown */
 .contact-dropdown-content a {
-  padding: 12px 16px;
+  padding: 12px  16px;
   text-decoration: none;
   border-radius: 10px;
   display: block;
 }
   
-  /* Change color of dropdown links on hover */
-.contact-dropdown-content a:hover {
+ /* Change color of dropdown links on hover */
+.contact-dropdown-content a:hover,
+.contact-dropdown-content a:focus {
   background-color: rgba(201, 89, 219, 0.75);
     
   transition: all .2s ease-in-out; 
 }
-  
+
 /* Show the dropdown menu on hover */
-.contact-dropdown:hover .contact-dropdown-content {
+.contact-dropdown:hover .contact-dropdown-content, 
+.contact-dropdown:focus-within .contact-dropdown-content{
   display: block; 
   animation: fade-in 0.1s ease-in-out forwards;
 }
+
+
+  /* The container <div> - needed to position the dropdown content */
+  .gallery-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+    
   
+  
+    /* Dropdown Content (Hidden by Default) */
+  .gallery-dropdown div {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: rgba(250, 174, 255, 0.5);
+    width: 100%;
+    text-shadow: 2px 2px 2px rgb(171, 105, 193);
+    z-index: 1;
+    border-radius: 10px;
+  }
+
+.gallery-dropdown div a {
+  text-transform: none;
+}
+  
+  /* Links inside the dropdown */
+.gallery-dropdown-content a {
+  padding: 12px  16px;
+  text-decoration: none;
+  border-radius: 10px;
+  display: block;
+}
+  
+ /* Change color of dropdown links on hover */
+.gallery-dropdown-content a:hover,
+.gallery-dropdown-content a:focus {
+  background-color: rgba(201, 89, 219, 0.75);
+    
+  transition: all .2s ease-in-out; 
+}
+
+/* Show the dropdown menu on hover */
+.gallery-dropdown:hover .gallery-dropdown-content, 
+.gallery-dropdown:focus-within .gallery-dropdown-content{
+  display: block; 
+  animation: fade-in 0.1s ease-in-out forwards;
+}
